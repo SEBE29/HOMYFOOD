@@ -1,0 +1,420 @@
+/*Style de bas pour mobile*/
+* {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  header {
+    text-align: center;
+    .logo {
+      padding: 20px 0;
+    }
+  }
+
+  .explorer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #f6f6f6;
+    text-align: center;
+    .display-2 {
+      font-size: x-large;
+    }
+
+    .display-3 {
+      font-size: large;
+    }
+
+    button {
+      background: linear-gradient(
+        355deg,
+        rgb(108, 16, 105) 0%,
+        rgb(175, 19, 175) 35%,
+        rgb(221, 65, 180) 100%
+      );
+
+      color: white;
+      padding: 15px;
+      border-radius: 25px;
+      border: none;
+    }
+
+    button:hover {
+      background: linear-gradient(
+        355deg,
+        rgb(205, 96, 201) 0%,
+        rgb(218, 102, 218) 20%,
+        rgb(226, 128, 200) 100%
+      );
+
+      box-shadow: 3px 3px rgba(242, 231, 231, 0.993);
+      scale: 1.01;
+      padding-top: 14px;
+      padding-bottom: 16px;
+    }
+  }
+
+  .fonctionnement {
+    padding: 16px;
+    text-align: start;
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .flex {
+      position: relative;
+      display: flex;
+      border-radius: 20px;
+      padding: 20px;
+      padding-left: 0px;
+      justify-content: center;
+      background-color: #f6f6f6;
+      margin-top: 20px;
+      margin-left: 8px;
+      text-align: center;
+      margin-right: 8px;
+
+      div {
+        position: absolute;
+        left: 0px;
+        background-color: #9356dc;
+        width: 24px;
+        height: 24px;
+        font-size: 15px;
+        border-radius: 12px;
+        color: white;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+      i {
+        padding-right: 25px;
+      }
+
+      .violet {
+        color: #9356dc;
+      }
+    }
+  }
+
+  .restaurant {
+    background-color: #f6f6f6;
+    h1 {
+      padding: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .card {
+      position: relative;
+      margin: 20px;
+      background-color: white;
+      border-radius: 15px;
+
+      img {
+        width: 100%;
+        border-radius: 15px;
+        height: 200px;
+        object-fit: cover;
+      }
+      .nouveau {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 5px;
+        border-radius: 2px;
+        color: #008766;
+        background-color: #99e2d0;
+      }
+
+      .cardcontent {
+        padding-left: 15px;
+        padding-bottom: 15px;
+        .cardtext {
+          .menu-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 15px;
+
+            svg path {
+              stroke: black;
+            }
+            svg:hover {
+              fill: #ff79da;
+            }
+            svg path:hover {
+              stroke: #ff79da;
+            }
+            .violet {
+              fill: #ff79da;
+              path {
+                stroke: #ff79da;
+              }
+            }
+          }
+          .cardtitle {
+            margin-bottom: 5px;
+          }
+          .cardsubtitle {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .details {
+    background-color: #f6f6f6;
+
+    .img-menu {
+      width: 100%;
+      height: 275px;
+      img {
+        width: 100%;
+        height: 275px;
+      }
+    }
+
+    .menu-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      .violet {
+        fill: #ff79da;
+      }
+    }
+
+    .plats {
+      padding: 15px;
+      p {
+        margin: 0px;
+      }
+      .entree {
+        border-bottom: 2px solid green;
+        width: fit-content;
+        margin-bottom: 15px;
+      }
+
+      .plat {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        max-width: 100%;
+        overflow: hidden;
+        .detailsplat {
+          flex-grow: 1;
+          padding: 10px;
+          h3 {
+            margin-top: 0px;
+          }
+        }
+
+        .plat-description {
+          p {
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            line-clamp: 2;
+            overflow: hidden;
+            height: calc(1.5em * 1);
+            max-height: calc(1.5em  *  1);
+          }
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .prix {
+            font-weight: bold;
+          }
+        }
+        .animation {
+          will-change: transform;
+          position: relative;
+          left: -20px; /* Position initiale */
+          transform: translateX(-20px); /* Préparation */
+          justify-content: center;
+          align-items: center;
+          background: #99e2d0;
+          display: none;
+          width: 60px;
+          border-radius: 0px 15px 15px 0px;
+
+          i {
+            background-color: white;
+            border-radius: 50%;
+            color: #99e2d0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .plat:hover {
+        .animation {
+          display: flex;
+          animation-name: anim1;
+          animation-duration: 0.2s;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1;
+        }
+      }
+    }
+
+    .commander {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      button {
+        background: linear-gradient(
+          355deg,
+          rgb(108, 16, 105) 0%,
+          rgb(175, 19, 175) 35%,
+          rgb(224, 106, 192) 100%
+        );
+        color: white;
+        padding: 15px;
+        border-radius: 25px;
+        border: none;
+        width: 186px;
+        height: 50px;
+        box-shadow: 3px 3px rgb(240, 234, 234);
+      }
+      button:hover {
+        background: linear-gradient(
+          355deg,
+          rgb(205, 96, 201) 0%,
+          rgb(218, 102, 218) 20%,
+          rgb(226, 128, 200) 100%
+        );
+        padding-top: 12px;
+        box-shadow: 3px 3px rgba(242, 231, 231, 0.993);
+        scale: 1.01;
+        padding-top: 14px;
+        padding-bottom: 16px;
+      }
+    }
+  }
+  footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+
+    .imgfooter {
+      img {
+        fill: white;
+      }
+    }
+
+    .footer-restaurant {
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 10px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    .fonctionnement {
+      padding-inline: 10%;
+      .fonctionnement-flex {
+        display: flex;
+        justify-content: space-between;
+
+        .flex {
+          padding-left: 30px;
+          width: 28%;
+        }
+      }
+    }
+    .restaurant {
+      padding-inline: 10%;
+      .restaurant-card {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        a {
+          width: 48% !important ;
+        }
+      }
+    }
+
+    .details {
+      background-color: white;
+      .img-menu {
+        width: 100%;
+        overflow: hidden;
+        height: 383px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .details-content {
+        position: relative;
+        padding-inline: 10%;
+        background-color: #f6f6f6;
+        margin-inline: 10%;
+        border-radius: 25px 25px 0px 0px;
+        margin-top: -40px;
+        padding-bottom: 30px;
+      }
+      .menu-title {
+        justify-content: center;
+        h3 {
+          font-size: 28px;
+          font-family: "Times New Roman", Times, serif;
+          padding-right: 15px;
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 20px;
+      justify-content: end;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+      .footer-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          margin-right: 20px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes anim1 {
+  from {
+    transform: translateX(60px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}

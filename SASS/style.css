@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/*Style de bas pour mobile*/
+* {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+body header {
+  text-align: center;
+}
+body header .logo {
+  padding: 20px 0;
+}
+body .explorer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+body .explorer .display-2 {
+  font-size: x-large;
+}
+body .explorer .display-3 {
+  font-size: large;
+}
+body .explorer button {
+  background: linear-gradient(355deg, rgb(108, 16, 105) 0%, rgb(175, 19, 175) 35%, rgb(221, 65, 180) 100%);
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+}
+body .explorer button:hover {
+  background: linear-gradient(355deg, rgb(205, 96, 201) 0%, rgb(218, 102, 218) 20%, rgb(226, 128, 200) 100%);
+  box-shadow: 3px 3px rgba(242, 231, 231, 0.993);
+  scale: 1.01;
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+body .fonctionnement {
+  padding: 16px;
+  text-align: start;
+}
+body .fonctionnement h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+body .fonctionnement .flex {
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+  padding: 20px;
+  padding-left: 0px;
+  justify-content: center;
+  background-color: #f6f6f6;
+  margin-top: 20px;
+  margin-left: 8px;
+  text-align: center;
+  margin-right: 8px;
+}
+body .fonctionnement .flex div {
+  position: absolute;
+  left: 0px;
+  background-color: #9356dc;
+  width: 24px;
+  height: 24px;
+  font-size: 15px;
+  border-radius: 12px;
+  color: white;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+body .fonctionnement .flex i {
+  padding-right: 25px;
+}
+body .fonctionnement .flex .violet {
+  color: #9356dc;
+}
+body .restaurant {
+  background-color: #f6f6f6;
+}
+body .restaurant h1 {
+  padding: 20px;
+}
+body .restaurant a {
+  text-decoration: none;
+  color: black;
+}
+body .restaurant .card {
+  position: relative;
+  margin: 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+body .restaurant .card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .restaurant .card .nouveau {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px;
+  border-radius: 2px;
+  color: #008766;
+  background-color: #99e2d0;
+}
+body .restaurant .card .cardcontent {
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+body .restaurant .card .cardcontent .cardtext .menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+body .restaurant .card .cardcontent .cardtext .menu-title svg path {
+  stroke: black;
+}
+body .restaurant .card .cardcontent .cardtext .menu-title svg:hover {
+  fill: #ff79da;
+}
+body .restaurant .card .cardcontent .cardtext .menu-title svg path:hover {
+  stroke: #ff79da;
+}
+body .restaurant .card .cardcontent .cardtext .menu-title .violet {
+  fill: #ff79da;
+}
+body .restaurant .card .cardcontent .cardtext .menu-title .violet path {
+  stroke: #ff79da;
+}
+body .restaurant .card .cardcontent .cardtext .cardtitle {
+  margin-bottom: 5px;
+}
+body .restaurant .card .cardcontent .cardtext .cardsubtitle {
+  margin-top: 5px;
+}
+body .details {
+  background-color: #f6f6f6;
+}
+body .details .img-menu {
+  width: 100%;
+  height: 275px;
+}
+body .details .img-menu img {
+  width: 100%;
+  height: 275px;
+}
+body .details .menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body .details .menu-title .violet {
+  fill: #ff79da;
+}
+body .details .plats {
+  padding: 15px;
+}
+body .details .plats p {
+  margin: 0px;
+}
+body .details .plats .entree {
+  border-bottom: 2px solid green;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+body .details .plats .plat {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  max-width: 100%;
+  overflow: hidden;
+}
+body .details .plats .plat .detailsplat {
+  flex-grow: 1;
+  padding: 10px;
+}
+body .details .plats .plat .detailsplat h3 {
+  margin-top: 0px;
+}
+body .details .plats .plat .plat-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .details .plats .plat .plat-description p {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 2;
+  overflow: hidden;
+  height: 1.5em;
+  max-height: calc(1.5em  *  1);
+}
+body .details .plats .plat .plat-description .prix {
+  font-weight: bold;
+}
+body .details .plats .plat .animation {
+  will-change: transform;
+  position: relative;
+  left: -20px; /* Position initiale */
+  transform: translateX(-20px); /* Préparation */
+  justify-content: center;
+  align-items: center;
+  background: #99e2d0;
+  display: none;
+  width: 60px;
+  border-radius: 0px 15px 15px 0px;
+}
+body .details .plats .plat .animation i {
+  background-color: white;
+  border-radius: 50%;
+  color: #99e2d0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .details .plats .plat:hover .animation {
+  display: flex;
+  animation-name: anim1;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+body .details .commander {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+body .details .commander button {
+  background: linear-gradient(355deg, rgb(108, 16, 105) 0%, rgb(175, 19, 175) 35%, rgb(224, 106, 192) 100%);
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  width: 186px;
+  height: 50px;
+  box-shadow: 3px 3px rgb(240, 234, 234);
+}
+body .details .commander button:hover {
+  background: linear-gradient(355deg, rgb(205, 96, 201) 0%, rgb(218, 102, 218) 20%, rgb(226, 128, 200) 100%);
+  padding-top: 12px;
+  box-shadow: 3px 3px rgba(242, 231, 231, 0.993);
+  scale: 1.01;
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+body footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+body footer .imgfooter img {
+  fill: white;
+}
+body footer .footer-restaurant {
+  display: flex;
+  align-items: center;
+}
+body footer .footer-restaurant p {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 1024px) {
+  body .fonctionnement {
+    padding-inline: 10%;
+  }
+  body .fonctionnement .fonctionnement-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .fonctionnement .fonctionnement-flex .flex {
+    padding-left: 30px;
+    width: 28%;
+  }
+  body .restaurant {
+    padding-inline: 10%;
+  }
+  body .restaurant .restaurant-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  body .restaurant .restaurant-card a {
+    width: 48% !important;
+  }
+  body .details {
+    background-color: white;
+  }
+  body .details .img-menu {
+    width: 100%;
+    overflow: hidden;
+    height: 383px;
+  }
+  body .details .img-menu img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  body .details .details-content {
+    position: relative;
+    padding-inline: 10%;
+    background-color: #f6f6f6;
+    margin-inline: 10%;
+    border-radius: 25px 25px 0px 0px;
+    margin-top: -40px;
+    padding-bottom: 30px;
+  }
+  body .details .menu-title {
+    justify-content: center;
+  }
+  body .details .menu-title h3 {
+    font-size: 28px;
+    font-family: "Times New Roman", Times, serif;
+    padding-right: 15px;
+  }
+  body .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  body .footer .footer-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .footer .footer-card p {
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+}
+@keyframes anim1 {
+  from {
+    transform: translateX(60px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}/*# sourceMappingURL=style.css.map */
