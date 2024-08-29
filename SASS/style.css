@@ -165,6 +165,9 @@ body .details .menu-title {
   padding-left: 15px;
   padding-right: 15px;
 }
+body .details .menu-title h3 {
+  font-family: "Shrikhand", serif;
+}
 body .details .menu-title .violet {
   fill: #ff79da;
 }
@@ -339,7 +342,6 @@ body footer .footer-restaurant p {
   }
   body .details .menu-title h3 {
     font-size: 28px;
-    font-family: "Times New Roman", Times, serif;
     padding-right: 15px;
   }
   body .footer {
@@ -349,6 +351,9 @@ body footer .footer-restaurant p {
     justify-content: end;
     align-items: center;
     flex-wrap: wrap-reverse;
+  }
+  body .footer p {
+    cursor: pointer;
   }
   body .footer .footer-card {
     display: flex;
