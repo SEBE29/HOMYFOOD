@@ -286,8 +286,18 @@ body footer .footer-restaurant p {
   margin-left: 10px;
   margin-bottom: 5px;
 }
+body footer .email {
+  text-decoration: none;
+  color: white;
+  margin-right: 15px;
+  margin-top: 10px;
+}
 
 @media (min-width: 1024px) {
+  body {
+    /* variables */
+    /* Loader*/
+  }
   body .fonctionnement {
     padding-inline: 10%;
   }
@@ -344,6 +354,44 @@ body footer .footer-restaurant p {
     font-size: 28px;
     padding-right: 15px;
   }
+  body .container {
+    z-index: 100;
+    background-color: #353535;
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: Loader-disappear 500ms 2500ms;
+    animation-fill-mode: forwards;
+    transition: opacity 0, 4s ease-out;
+  }
+  @keyframes Loader-disappear {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  body .loading {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  body .point {
+    width: 30px;
+    height: 30px;
+    background-color: #9356dc;
+    border-radius: 50px;
+    margin: 5px;
+    opacity: 0;
+    animation: anim 1, 5s ease-in-out infinite;
+  }
   body .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -366,10 +414,19 @@ body footer .footer-restaurant p {
   }
 }
 @keyframes anim1 {
-  from {
-    transform: translateX(60px);
+  100% {
+    opacity: 0;
+    transform: translatey(0);
   }
-  to {
-    transform: translateX(20px);
+  50% {
+    transform: translatey(-1em);
   }
+}
+.point {
+  background: linear-gradient(45deg);
+}
+
+.point:nth-child(1) {
+  animation-delay: 0s;
+  background-color: #ff79da;
 }/*# sourceMappingURL=style.css.map */
