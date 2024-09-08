@@ -9,6 +9,8 @@ body {
   padding: 0;
   width: 100%;
   box-sizing: border-box;
+  /* variables */
+  /* Loader*/
 }
 body header {
   text-align: center;
@@ -292,12 +294,47 @@ body footer .email {
   margin-right: 15px;
   margin-top: 10px;
 }
+body .container {
+  z-index: 100;
+  background-color: #353535;
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: Loader-disappear 500ms 2500ms;
+  animation-fill-mode: forwards;
+  transition: opacity 0, 4s ease-out;
+}
+@keyframes Loader-disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+body .loading {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+body .point {
+  width: 30px;
+  height: 30px;
+  background-color: #9356dc;
+  border-radius: 50px;
+  margin: 5px;
+  opacity: 0;
+  animation: anim 1, 5s ease-in-out infinite;
+}
 
 @media (min-width: 1024px) {
-  body {
-    /* variables */
-    /* Loader*/
-  }
   body .fonctionnement {
     padding-inline: 10%;
   }
@@ -354,44 +391,6 @@ body footer .email {
     font-size: 28px;
     padding-right: 15px;
   }
-  body .container {
-    z-index: 100;
-    background-color: #353535;
-    opacity: 1;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    animation: Loader-disappear 500ms 2500ms;
-    animation-fill-mode: forwards;
-    transition: opacity 0, 4s ease-out;
-  }
-  @keyframes Loader-disappear {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  body .loading {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-  body .point {
-    width: 30px;
-    height: 30px;
-    background-color: #9356dc;
-    border-radius: 50px;
-    margin: 5px;
-    opacity: 0;
-    animation: anim 1, 5s ease-in-out infinite;
-  }
   body .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -414,19 +413,10 @@ body footer .email {
   }
 }
 @keyframes anim1 {
-  100% {
-    opacity: 0;
-    transform: translatey(0);
+  from {
+    transform: translateX(60px);
   }
-  50% {
-    transform: translatey(-1em);
+  to {
+    transform: translateX(20px);
   }
-}
-.point {
-  background: linear-gradient(45deg);
-}
-
-.point:nth-child(1) {
-  animation-delay: 0s;
-  background-color: #ff79da;
 }/*# sourceMappingURL=style.css.map */
