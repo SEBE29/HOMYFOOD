@@ -360,6 +360,9 @@ body {
     animation: Loader-disappear 500ms 2500ms;
     animation-fill-mode: forwards;
     transition: opacity 0, 4s ease-out;
+    p {
+      font-family: "Shrikhand";
+    }
   }
 
   @keyframes Loader-disappear {

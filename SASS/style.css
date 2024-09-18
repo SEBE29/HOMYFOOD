@@ -309,6 +309,9 @@ body .container {
   animation-fill-mode: forwards;
   transition: opacity 0, 4s ease-out;
 }
+body .container p {
+  font-family: "Shrikhand";
+}
 @keyframes Loader-disappear {
   from {
     opacity: 1;
